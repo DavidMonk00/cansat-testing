@@ -1,0 +1,37 @@
+---
+size: 56
+fields:
+    id:
+        type: "!i"
+        length: 4
+        representation: "ID: {:d}"
+        custom: no
+    time:
+        length: 8
+        representation: "Timestamp: {}"
+        custom: yes
+    temperature:
+        type: "!f"
+        length: 4
+        representation: "Temperature: {:.03f}\u00b0C"
+        custom: no
+    humidity:
+        type: "!f"
+        length: 4
+        representation: "Humidity: {:.03f}%"
+        custom: no
+    acceleration:
+        type: "!fff"
+        length: 12
+        representation: "Acceleration: x={:.03f} y={:.03f} z={:.03f}"
+        custom: no
+    gyro:
+        type: "!fff"
+        length: 12
+        representation: "Gyro: x={:.03f} y={:.03f} z={:.03f}"
+        custom: no
+    B:
+        type: "!fff"
+        length: 12
+        representation: "Magnetic Field Strength: x={:.03f} y={:.03f} z={:.03f}"
+        custom: no
